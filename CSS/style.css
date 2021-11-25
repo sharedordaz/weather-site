@@ -21,6 +21,9 @@ p, li, strong, b, i{
 a{
     color:var(--green)
 }
+img{
+    max-width:100%;
+}
 
 /* Start the specific content*/
 
@@ -31,9 +34,9 @@ main{
     margin-bottom: 1%;
     background-color: white;
     align-items: center;
-    padding: 2em;
+    padding: 3%;
 }
-/*Title banner CSS*/
+/*Title banner*/
 .title{
     background-color: var(--aqua);
 }
@@ -48,7 +51,7 @@ main{
     display: block;
 }
 
-/* Nav bar CSS */
+/* Nav bar */
 nav{
     background-color: var(--black);
 
@@ -80,6 +83,10 @@ nav ul a{
     display:none;
     height: 4.8em;
 }
+/*Banner*/
+.banner img{
+    max-width:100%
+}
 
 footer{
     background-color: var(--black);
@@ -87,6 +94,8 @@ footer{
 footer div{
     display: inline-block
 }
+
+
 
 @media screen and (max-width: 600px){
     /*Mobile title CSS*/
