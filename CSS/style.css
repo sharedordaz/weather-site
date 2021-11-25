@@ -7,6 +7,7 @@
     --green: #5C946E; 
     --moldgreen: #80C2AF; 
     --aqua: #A0DDE6; 
+    --grey: #868fa3;
 
     background-image: url(../images/wallpaper.jpg); 
 }
@@ -88,13 +89,26 @@ nav ul a{
     max-width:100%
 }
 
+.weather_sum{
+    border-style: solid;
+    background-color: var(--grey);
+    border-width: 2px;
+    
+    padding: 3px;
+
+    position:absolute;
+    top: 250px;
+    margin-top: 5%;
+    margin-left: 1.5em;
+}
+
+
 footer{
     background-color: var(--black);
 }
 footer div{
     display: inline-block
 }
-
 
 
 @media screen and (max-width: 600px){
@@ -128,5 +142,10 @@ footer div{
         }
     .menu:hover{
         background-color: rgb(0, 0, 0);
+    }
+    /*Weather Summary*/
+    .weather_sum{
+        position: static;
+        margin:0px;
     }
 }

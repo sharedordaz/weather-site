@@ -1,6 +1,6 @@
 let menu_icon = document.querySelector(".menu");
 let menu = document.querySelectorAll("ul a li");
-console.log(menu);
+//console.log(menu);
 menu_icon.addEventListener("click", show_menu)
 
 function show_menu() {
