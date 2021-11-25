@@ -12,7 +12,7 @@
     background-image: url(../images/wallpaper.jpg); 
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 }
 
@@ -45,17 +45,18 @@ main{
     float: left;
     margin-left:3em;
     margin-right:3px;
-    max-width: 4em;
+    max-width: 5em;
     padding:0.5%;
 }
 .title strong, .title h1{
     display: block;
+    padding:5px;
 }
 
 /* Nav bar */
 nav{
     background-color: var(--black);
-
+    margin-top:-1em;
 }
 nav ul{
     display: flex;
@@ -102,12 +103,31 @@ nav ul a{
     margin-left: 1.5em;
 }
 
-
+/*footer*/
 footer{
     background-color: var(--black);
+    padding:10px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-items: center;
 }
-footer div{
-    display: inline-block
+.contact_info{
+    text-align: left;
+    align-items: center;
+}
+.contact_info h5{
+    text-align: center;
+}
+.contact_info img{
+    max-width: 15px;
+}
+.contact_info ul{
+    list-style-type: none;
+    margin-left: -3em;
+}
+
+.social_media img{
+    max-width: 20px;
 }
 
 
@@ -117,10 +137,6 @@ footer div{
         margin-left: 0em;
     }
     /*Mobile nav CSS*/
-    nav{
-        margin-top:-1em;
-    }
-
     nav ul{
         display: flex;
         flex-direction: column;
@@ -147,5 +163,16 @@ footer div{
     .weather_sum{
         position: static;
         margin:0px;
+
     }
-}
+    footer{
+        grid-template: 1fr 1fr / 1fr;
+    }
+    footer iframe{
+        grid-row: 2;
+    }
+    .social_media{
+        display: none;
+    }
+}   
+
