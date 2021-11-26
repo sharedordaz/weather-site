@@ -83,7 +83,7 @@ nav ul a{
 .menu{
     cursor: pointer;
     display:none;
-    height: 4.8em;
+    height: 6em;
 }
 /*Banner*/
 .banner img{
@@ -111,6 +111,12 @@ footer{
     grid-template: 1fr / 1fr 1fr;
     justify-items: center;
 }
+footer p, footer li, footer b, footer strong{
+    color: var(--grey)
+}
+footer h5{
+    color: var(--aqua);
+}
 .contact_info{
     text-align: left;
     align-items: center;
@@ -130,8 +136,23 @@ footer{
     max-width: 20px;
 }
 
+/*GALLERY*/
+.images-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.images-grid img{
+    height: 75%;
+}
+.images-grid div{
+    text-align: center;
+}
+.images-grid div:hover{
+    box-shadow: 5px 5px 10px var(--black);
+}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){ /*MEDIUM*/
     /*Mobile title CSS*/
     .title img{
         margin-left: 0em;
@@ -157,7 +178,7 @@ footer{
         margin-left:5em;
         }
     .menu:hover{
-        background-color: rgb(0, 0, 0);
+        background-color: whitesmoke;
     }
     /*Weather Summary*/
     .weather_sum{
@@ -174,5 +195,19 @@ footer{
     .social_media{
         display: none;
     }
+    .images-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 }   
 
+
+@media screen and (max-width: 400px){ /*SMALL*/
+    .menu{
+        max-width: 15%;
+        height: 7em;
+    }
+    /*GALLERY*/
+    .images-grid{
+        grid-template-columns: 1fr;
+}
+}
