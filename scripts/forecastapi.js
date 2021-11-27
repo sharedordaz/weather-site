@@ -26,7 +26,7 @@ fetch(prestonforecast)
                 
                 let f_image = document.createElement("img");
                 let temp_string = document.createElement('p');
-                let day_string = document.createElement("b");
+                let day_string = document.createElement("h4");
                 let f_div = document.createElement("div");
                 
                 temp_string.textContent = temp + " F";

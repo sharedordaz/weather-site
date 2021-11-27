@@ -187,7 +187,24 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     float:right;
 }
 
-
+/*Five day Forecast*/
+.five_day{
+    display: grid;
+    grid-template: 1fr / repeat(5, 1fr);
+    grid-gap: 3%;
+}
+.five_day div{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--moldgreen);
+}
+.five_day img{
+    background-color: var(--aqua);
+    height:10em;
+    max-width:100%;
+}
 
 
 /*------------GALLERY*/
@@ -246,7 +263,6 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     .weather_sum{
         position: static;
         margin:0px;
-
     }
     footer{
         grid-template: 1fr 1fr / 1fr;
@@ -259,6 +275,16 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     }
     .images-grid{
         grid-template-columns: 1fr 1fr;
+    }
+
+    /*Five day Forecast*/
+    .five_day{
+        grid-gap:0px;
+        font-size: 0.8em;
+    }
+    .five_day img{
+        height:5em;
+        width:100%;
     }
     /*---------INDEX PAGE*/
     .home-grid div p, #sodasprings-div p{
@@ -305,5 +331,10 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
         max-height:30%;
         max-width: 10em;
         margin-left:3em;
+    }
+
+    .five_day{
+        grid-gap:0px;
+        font-size: 0.5em;
     }
 }
