@@ -150,6 +150,7 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     border-color: var(--black);
 
     margin-right:15%;
+    padding:1em;
 }
 
 .home-grid div img{
@@ -243,6 +244,14 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     .images-grid{
         grid-template-columns: 1fr 1fr;
     }
+    /*---------INDEX PAGE*/
+    .home-grid div p, #sodasprings-div p{
+        font-size: 0.8em;
+    }
+
+    .home-grid div img, #sodasprings-div img{
+        max-width: 30%;
+    }
 }   
 
 
@@ -258,13 +267,12 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     /*---------INDEX PAGE*/
     .home-grid div, #sodasprings-div{
         margin: 0px;
-        max-width: 100%;
     }
 
     .home-grid div img, #sodasprings-div img{
         float:none;
         max-height:30%;
         max-width: 10em;
-        margin-left:4em;
+        margin-left:3em;
     }
 }
