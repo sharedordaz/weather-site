@@ -93,7 +93,7 @@ nav ul a{
 .banner img{
     max-width:100%
 }
-
+/*Weather Summary*/
 .weather_sum{
     border-style: solid;
     background-color: var(--grey);
@@ -105,7 +105,20 @@ nav ul a{
     top: 250px;
     margin-top: 5%;
     margin-left: 1.5em;
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap:1em;
+
 }
+.weather_sum img{
+    float:left;
+}
+.weather_sum p{
+    display:inline;
+    font-weight: lighter;
+}
+
 
 /*footer*/
 footer{
@@ -258,6 +271,9 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 @media screen and (max-width: 400px){ /*SMALL*/
     .menu{
         max-width: 15%;
+    }
+    .weather_sum{
+    grid-template: 1fr  1fr/ 1fr;
     }
     /*GALLERY*/
     .images-grid{
