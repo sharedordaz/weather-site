@@ -152,6 +152,14 @@ footer h5{
     box-shadow: 5px 5px 10px var(--black);
 }
 
+/*STORM CENTER*/
+.scform, #thanks-site{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    padding:1.5em;
+}
+
 @media screen and (max-width: 600px){ /*MEDIUM*/
     /*Mobile title CSS*/
     .title img{
