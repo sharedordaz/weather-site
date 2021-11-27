@@ -11,5 +11,86 @@
 </head>
 <body>
     
+    <header>
+    <div class = "title">
+        <img class="logo" src="../images/site-logo.png" alt="Time 2day logo">
+        <img class="menu" src="../images/menu.png" alt="menu icon">
+        <h1>Time 2day</h1>
+        <strong>Whats the time for two day?</strong>
+        
+    </div>
+    <nav>
+        <ul>  
+            <a href="../index.html"><li>Home</li></a>
+            <a href="preston.html"><li>Preston</li></a>
+            <a href="soda-springs.html"><li>Soda Springs</li></a>
+            <a href="fish-haven.html"><li>Fish Haven</li></a>
+            <a href="stormcenter.html"><li>Storm Center</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+        </ul>
+        <script src="../scripts/nav-script.js"></script>
+    </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Soda Springs Idaho</h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="../images/preston/preston-idaho-short.jpg">
+                <img src="../images/preston/preston-idaho-long.jpg" alt="Hero Image">
+            </picture>
+        </div>
+        <div class= "weather_sum"> 
+            <div>
+                <h3>Weather Summary</h3>
+                <img class="weather-image"  alt="Actual climate"> 
+                <h5>Weather: <i class=weather></i></h5>
+            </div>
+            <div>
+                <b>Actual temp: <p class="currently"></p></b><br>
+                <b>Higher temp: <p class="high"></p></b><br>
+                <b>Wind temp: <p class="wind-chill"></p></b><br>
+                <b>Wind speed: <p class="wind-speed"></p></b><br>
+                <b>Humidity: <p class="humidity"></p></b><br>
+            </div>
+
+        <script src="../scripts/weatherapi.js"></script>    
+        </div>
+        <h4>Five Day Forecast</h4>
+        <div class="five_day">
+            <!-- Fill with JS code -->
+            <script src="../scripts/forecastapi.js"></script>
+        </div>
+        <div class="upcoming-events">
+            <h3>Upcoming Events</h3>
+            <!-- Fill with JS code -->
+            <script src="../scripts/towndata.js"></script>
+        </div>
+
+    </main>
+    
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1637871667441!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class= "contact_info">
+            <h5>Contact Information</h5>
+            <ul>
+                <li><img src="../images/phone.png" alt="Phone"> (+52)5541836785</li>
+                <li><img src="../images/e-mail.png" alt="E-mail"> san21058@byui.edu</li>
+            </ul>
+            <div class= "social_media">
+                <a href="https://www.youtube.com" target="_blank"><img src="../images/youtube.png" alt="youtube"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="twitter"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+
+    </footer>
+    
+    
+    <div class= "pancakes" onclick= "document.querySelector('.pancakes').style.display = 'none'">
+        <p>"Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."<br> <i>Click to hide message</i></p>
+        
+        <script src="../scripts/pancakes-script.js"></script>
+        
+    </div>
 </body>
 </html>

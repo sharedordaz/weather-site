@@ -1,6 +1,7 @@
+
 const prestonforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
 let main_div = document.querySelector(".five_day");
-let x = 0
+let x = 0;
 const daysOfWeek = ["Sunday",
                     "Monday",
                     "Tuesday",

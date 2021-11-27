@@ -206,6 +206,26 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
     max-width:100%;
 }
 
+/*Upcoming Events*/
+    .upcoming-events{
+        background-color: var(--grey);
+
+        border-style:solid;
+        border-width: 10px;
+        border-radius: 30px;
+        border-color: var(--black);
+
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        
+        padding:2%;
+        margin:5% 10% 0% 10%;
+    }
+
+    .upcoming-events i, .upcoming-events h3{
+        padding:0.5em;
+    }
 
 /*------------GALLERY*/
 .images-grid{
