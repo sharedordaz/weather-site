@@ -118,6 +118,9 @@ nav ul a{
     display:inline;
     font-weight: lighter;
 }
+.weather_sum b, .weather_sum h3{
+    padding:0.3em;
+}
 
 
 /*footer*/
@@ -269,11 +272,23 @@ footer h5, footer h2, footer p, footer li, footer b, footer strong{
 
 
 @media screen and (max-width: 400px){ /*SMALL*/
+    p, b,strong,  i, li, h1, h2, h3, h4, h5{
+        font-size: 0.7em;
+    }
     .menu{
         max-width: 15%;
+        height: 3.3em;
+    }
+
+    nav ul a li{
+        padding:1%;
+    }
+    .logo{
+        max-width: 3em;
     }
     .weather_sum{
     grid-template: 1fr  1fr/ 1fr;
+    grid-gap:0em;
     }
     /*GALLERY*/
     .images-grid{
