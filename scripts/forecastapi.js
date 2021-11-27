@@ -1,7 +1,21 @@
-
+const fishforecast =    "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
+const sodaforecast =    "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
 const prestonforecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3e5fc40d3932e762ff13a8c9ee95bbb8";
+const thisplace = document.title;
+let choosenforecast;
+if (thisplace == "Preston"){
+    choosenforecast = prestonforecast;
+}
+else if (thisplace == "Soda Springs") {
+    choosenforecast = sodaforecast;
+}
+
+else if (thisplace == "Fish Haven") {
+    choosenforecast = fishforecast;
+}
 let main_div = document.querySelector(".five_day");
 let x = 0;
+
 const daysOfWeek = ["Sunday",
                     "Monday",
                     "Tuesday",
@@ -14,7 +28,7 @@ let date = new Date;
 let wday = date.getDay();
 //console.log(wday);
 
-fetch(prestonforecast)
+fetch(choosenforecast)
     .then((response) => response.json())
     .then(jsonObject => {
         //console.log(jsonObject); //console log passed
@@ -30,7 +44,7 @@ fetch(prestonforecast)
                 let day_string = document.createElement("h4");
                 let f_div = document.createElement("div");
                 
-                temp_string.textContent = temp + " F";
+                temp_string.textContent = temp + " °F";
                 f_image.setAttribute('src', icon);
                 
 
