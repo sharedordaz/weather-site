@@ -40,7 +40,18 @@
             </picture>
         </div>
         <div class= "weather_sum"> 
-            <h3>Weather Summary</h3> <p>Empty Paragraph</p>
+            <h3>Weather Summary</h3>
+            <div>
+            <img class="weather-image"  alt="Actual climate"> 
+            <h5>Weather: <i class=weather></i></h5>
+            </div>
+            <span><b>Actual temp: </b><p class="currently"></p></span>
+            <span><b>Higher temp: </b><p class="high"></p></span>
+            <span><b>Wind temp: </b><p class="wind-chill"></p></span>
+            <span><b>Wind speed: </b><p class="wind-speed"></p></span>
+            <span><b>Humidity: </b><p class="humidity"></p></span>
+
+        <script src="../scripts/weatherapi.js"></script>    
         </div>
         <div class="five_day">
             <h4>Five Day Forecast</h4>
