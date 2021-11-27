@@ -26,11 +26,15 @@ img{
     max-width:100%;
 }
 
+button, input[type=submit],  input[type=reset]{
+    background-color:var(--green);
+}
+
 /* Start the specific content*/
 
 main{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 1%;
     margin-bottom: 1%;
     background-color: white;
@@ -111,18 +115,13 @@ footer{
     grid-template: 1fr / 1fr 1fr;
     justify-items: center;
 }
-footer p, footer li, footer b, footer strong{
-    color: var(--grey)
-}
-footer h5{
-    color: var(--aqua);
+footer h5, footer h2, footer p, footer li, footer b, footer strong{
+    color: var(--grey);
+    text-align: center;
 }
 .contact_info{
     text-align: left;
     align-items: center;
-}
-.contact_info h5{
-    text-align: center;
 }
 .contact_info img{
     max-width: 15px;
@@ -135,8 +134,46 @@ footer h5{
 .social_media img{
     max-width: 20px;
 }
+/*---------INDEX PAGE*/
+.home-grid{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:1em;
+}
 
-/*GALLERY*/
+.home-grid div{
+    background-color: var(--moldgreen);
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: var(--black);
+
+    margin-right:15%;
+}
+
+.home-grid div img{
+    float:left;
+    max-width: 10em;
+    height:90%;
+
+    margin:1em;
+    border-radius: 10px;
+    margin-top:0.5em;
+}
+#sodasprings-div{
+    margin-right:0%;
+    margin-left:15%;
+    
+}
+#sodasprings-div img{
+    float:right;
+}
+
+
+
+
+/*------------GALLERY*/
 .images-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -152,7 +189,7 @@ footer h5{
     box-shadow: 5px 5px 10px var(--black);
 }
 
-/*STORM CENTER*/
+/*----------STORM CENTER*/
 .scform, #thanks-site{
     display:flex;
     flex-direction: column;
@@ -161,11 +198,11 @@ footer h5{
 }
 
 @media screen and (max-width: 600px){ /*MEDIUM*/
-    /*Mobile title CSS*/
+    /*------Mobile title CSS*/
     .title img{
         margin-left: 0em;
     }
-    /*Mobile nav CSS*/
+    /*----------Mobile nav CSS*/
     nav ul{
         display: flex;
         flex-direction: column;
@@ -188,7 +225,7 @@ footer h5{
     .menu:hover{
         background-color: whitesmoke;
     }
-    /*Weather Summary*/
+    /*---------Weather Summary*/
     .weather_sum{
         position: static;
         margin:0px;
@@ -216,5 +253,18 @@ footer h5{
     /*GALLERY*/
     .images-grid{
         grid-template-columns: 1fr;
-}
+    }
+
+    /*---------INDEX PAGE*/
+    .home-grid div, #sodasprings-div{
+        margin: 0px;
+        max-width: 100%;
+    }
+
+    .home-grid div img, #sodasprings-div img{
+        float:none;
+        max-height:30%;
+        max-width: 10em;
+        margin-left:4em;
+    }
 }
