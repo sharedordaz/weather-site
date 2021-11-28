@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5{
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 }
 
-p, li, strong, b, i, label{
+p, li, strong, b, i, label, button{
     font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
 }
 a{
